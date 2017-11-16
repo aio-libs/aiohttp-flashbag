@@ -15,10 +15,6 @@ def flashbag_append(request, key, value):
             'Install Flashbag middleware in your application',
         )
 
-    print('=' * 100)
-    print(type(request))
-    print('=' * 100)
-
     old_value = request[NEW_REQUEST_KEY].get(key, [])
 
     if not isinstance(old_value, list):
