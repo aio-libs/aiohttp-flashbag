@@ -3,7 +3,7 @@ aiohttp_flashbag
 
 The library provides flashbag for `aiohttp.web`__.
 
-.. _aiohttp_web: https://aiohttp.readthedocs.io/en/latest/web.html
+.. _aiohttp_web: https://docs.aiohttp.org/en/stable/
 
 __ aiohttp_web_
 
