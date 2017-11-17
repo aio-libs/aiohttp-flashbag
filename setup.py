@@ -1,34 +1,22 @@
-import codecs
-import io
-import os
 import re
+from pathlib import Path
 
 from setuptools import setup
 
 
 def get_version():
-    with codecs.open(
-        os.path.join(
-            os.path.abspath(
-                os.path.dirname(__file__),
-            ),
-            'aiohttp_flashbag',
-            '__init__.py',
-        ),
-        'r',
-        'utf-8',
-    ) as fp:
-        try:
-            return re.findall(r"^__version__ = '([^']+)'$", fp.read(), re.M)[0]
-        except IndexError:
-            raise RuntimeError('Unable to determine version.')
+    init_file = Path(__file__).parent / 'aiohttp_flashbag' / '__init__.py'
+
+    content = init_file.read_text(encoding='utf-8')
+
+    try:
+        return re.findall(r"^__version__ = '([^']+)'$", content, re.M)[0]
+    except IndexError:
+        raise RuntimeError('Unable to determine version.')
 
 
 def read(*parts):
-    filename = os.path.join(os.path.abspath(os.path.dirname(__file__)), *parts)
-
-    with io.open(filename, encoding='utf-8', mode='rt') as fp:
-        return fp.read()
+    return Path(__file__).parent.joinpath(*parts).read_text(encoding='utf-8')
 
 
 install_requires = ['aiohttp>=2.3.2', 'aiohttp-session>=1.2.0']
@@ -55,7 +43,6 @@ setup(
         'Operating System :: Microsoft :: Windows',
         'Programming Language :: Python',
         'Programming Language :: Python :: 3',
-        'Programming Language :: Python :: 3.4',
         'Programming Language :: Python :: 3.5',
         'Programming Language :: Python :: 3.6',
     ],
