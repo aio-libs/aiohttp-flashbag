@@ -48,6 +48,7 @@ setup(
     ],
     keywords=[
         'flashbag',
+        'flash messages',
         'aiohttp',
     ],
 )
