@@ -52,7 +52,7 @@ def flashbag_get(request, key, default=None):
             'Install Flashbag middleware in your application',
         )
 
-    return request[OLD_REQUEST_KEY].pop(key, default)
+    return request[OLD_REQUEST_KEY].get(key, default)
 
 
 @web.middleware
