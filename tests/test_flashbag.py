@@ -11,11 +11,9 @@ flash_message = {
     'value': [
         {
             'key11': 'val11',
-            'key12': 'val12',
         },
         {
             'key21': 'val21',
-            'key22': 'val22',
         },
     ],
     'default': 'default value',
