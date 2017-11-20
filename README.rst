@@ -102,17 +102,17 @@ First of all, you have to register ``aiohttp_flashbag.flashbag_middleware`` in `
 You can get some data from the previous request with ``aiohttp_flashbag.flashbag_get`` method. Parameters:
 
 - **request**. Instance of ``aiohttp.web_request.Request``.
-- **key**. Name of "variable", that you want to get
+- **key**. Name of "variable" that you want to get
 - **default**. The default value that should be returned, if the key doesn't exist in session flashbag.
 
-For specify one "variable" in flashbag you should use ``aiohttp_flashbag.flashbag_set``. Parameters:
+To set one "variable" in flashbag you should use ``aiohttp_flashbag.flashbag_set``. Parameters:
 
 - **request**. Instance of ``aiohttp.web_request.Request``.
-- **key**. Name of "variable", that you want to specify.
+- **key**. Name of "variable" that you want to specify.
 - **value**. Data that you want to specify.
 
 If you need to replace all "variables" in flashbag you should use ``aiohttp_flashbag.flashbag_replace_all``. Parameters:
 
 - **request**. Instance of ``aiohttp.web_request.Request``.
-- **value**. Dict with values, that you want to add into flashbag.
+- **value**. Dict with values that you want to add into flashbag.
 
