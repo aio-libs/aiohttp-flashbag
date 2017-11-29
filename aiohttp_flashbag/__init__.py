@@ -4,9 +4,9 @@ from aiohttp_session import get_session
 __version__ = '0.0.1'
 
 
-OLD_REQUEST_KEY = 'flashbag_old'
-NEW_REQUEST_KEY = 'flashbag_new'
-SESSION_KEY = 'flashbag'
+OLD_REQUEST_KEY = 'aiohttp_flashbag_old'
+NEW_REQUEST_KEY = 'aiohttp_flashbag_new'
+SESSION_KEY = 'aiohttp_flashbag'
 
 
 def flashbag_append(request, key, value):

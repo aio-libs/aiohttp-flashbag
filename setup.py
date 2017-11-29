@@ -19,13 +19,13 @@ def read(*parts):
     return Path(__file__).parent.joinpath(*parts).read_text(encoding='utf-8')
 
 
-install_requires = ['aiohttp>=2.3.2', 'aiohttp-session>=1.2.0']
+install_requires = ['aiohttp>=2.3.0', 'aiohttp-session>=1.2.0']
 
 
 setup(
     name='aiohttp-flashbag',
     version=get_version(),
-    description=('Flashbag support for aiohttp.web',),
+    description=('Flashbag (flash messages) support for aiohttp.web',),
     long_description=read('README.rst'),
     author='Ocean S.A.',
     author_email='osf@ocean.io',

@@ -1,4 +1,4 @@
-aiohttp==2.3.2
+aiohttp==2.3.0
 -e .
 aiohttp-session==1.2.0
 flake8==3.4.1
