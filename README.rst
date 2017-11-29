@@ -59,7 +59,7 @@ Basic usage example:
         post = await request.post()
 
         if len(post['name']) == 0:
-            aiohttp_flashbag.flashbag_add(request, 'error', 'Name is required')
+            aiohttp_flashbag.flashbag_set(request, 'error', 'Name is required')
 
             return web.HTTPSeeOther('/')
 
