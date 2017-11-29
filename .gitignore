@@ -1,0 +1,27 @@
+# python specific
+env*
+.cache/
+.idea/
+*.pyc
+*.so
+*.pyd
+aiohttp_flashbag.egg-info
+build/*
+dist/*
+MANIFEST
+__pycache__/
+*.egg-info/
+.coverage
+.python-version
+htmlcov
+
+# generic files to ignore
+*~
+*.lock
+*.DS_Store
+*.swp
+*.out
+
+.tox/
+deps/
+docs/_build/
