@@ -7,3 +7,4 @@ pytest==3.2.3
 pytest-aiohttp==0.1.3
 pytest-cov==2.5.1
 tox==2.9.1
+yarl<1.0  # pin version because aiohttp==2.x doesn't support yarl 1.x
