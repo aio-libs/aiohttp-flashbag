@@ -1,7 +1,7 @@
 from aiohttp import web
 from aiohttp_session import get_session
 
-__version__ = '0.0.2'
+__version__ = '0.0.3'
 
 
 OLD_REQUEST_KEY = 'aiohttp_flashbag_old'
