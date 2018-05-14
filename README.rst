@@ -7,11 +7,11 @@ The library provides flashbag for `aiohttp.web`__.
 
 __ aiohttp_web_
 
-.. image:: https://img.shields.io/travis/wikibusiness/aiohttp-flashbag.svg
-    :target: https://travis-ci.org/wikibusiness/aiohttp-flashbag
+.. image:: https://img.shields.io/travis/aio-libs/aiohttp-flashbag.svg
+    :target: https://travis-ci.org/aio-libs/aiohttp-flashbag
 
-.. image:: https://codecov.io/github/wikibusiness/aiohttp-flashbag/coverage.svg
-    :target: https://codecov.io/github/wikibusiness/aiohttp-flashbag
+.. image:: https://codecov.io/github/aio-libs/aiohttp-flashbag/coverage.svg
+    :target: https://codecov.io/github/aio-libs/aiohttp-flashbag
 
 Usage
 -----
