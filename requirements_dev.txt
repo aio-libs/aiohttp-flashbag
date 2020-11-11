@@ -1,6 +1,6 @@
 aiohttp==2.3.0
 -e .
-aiohttp-session==1.2.0
+aiohttp-session==2.7.0
 flake8==3.4.1
 isort==4.2.15
 pytest==3.2.3
